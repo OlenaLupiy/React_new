@@ -2,10 +2,10 @@ import {useEffect, useState} from "react";
 import Comment from "./Comment";
 import {getComments} from "../../service/user.service";
 
-export default function Comments(){
+export default function Comments({postId}){
     const [comments, setComments] = useState([]);
     useEffect(()=>{
-        getComments().then(value => setComments([...value]))
+        getComments(postId).then(value => setComments([...value]))
     }, [])
 
     return (

@@ -1,11 +1,12 @@
 import {useEffect, useState} from "react";
 import {getPosts} from "../../service/user.service";
 import Post from "./Post";
+import Comments from "../comments/Comments";
 
-export default function Posts(){
+export default function Posts({userId}){
     let [posts, setPosts] = useState([]);
     useEffect(() =>{
-        getPosts().then(value => setPosts([...value]))
+        getPosts(userId).then(value => setPosts([...value]))
 
     }, [])
 
