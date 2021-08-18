@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+}
+.comments{
+    background: lavender;
+    width: 50%;
+}
+.comment{
+    background: papayawhip;
+    width: 50%;
+}

@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+}
+.posts{
+    background: silver;
+    width: 50%;
+}
+.post{
+    background: cornsilk;
+    width: 50%;
+}
